@@ -15,7 +15,7 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/rbx-thumbnails/, ""),
       },  
       "/api": {
-        target: "http://localhost:3001",
+        target: "http://13.125.9.48:3001",
         changeOrigin: true,
       },
     },
