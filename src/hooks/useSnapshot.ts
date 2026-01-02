@@ -10,7 +10,7 @@ export function useSnapshot() {
   useEffect(() => {
     let mounted = true;
 
-    fetch("http://13.125.9.48:3001/api/snapshot/latest")
+    fetch("https://api.pixelogue.kr/api/snapshot/latest")
       .then((res) => {
         if (!res.ok) throw new Error(`Snapshot fetch failed (${res.status})`);
         return res.json();

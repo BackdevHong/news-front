@@ -32,7 +32,7 @@ export function useThumbnails(universeIds: number[]) {
       }
       setLoading(true);
       try {
-        const r = await fetch(`http://13.125.9.48:3001/api/thumbnails?universeIds=${encodeURIComponent(csv)}`, {
+        const r = await fetch(`https://api.pixelogue.kr/api/thumbnails?universeIds=${encodeURIComponent(csv)}`, {
           headers: { Accept: "application/json" },
         });
         if (!r.ok) throw new Error(`thumb fetch failed: ${r.status}`);
